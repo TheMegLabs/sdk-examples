@@ -12,8 +12,8 @@ importers:
         specifier: 1.34.0
         version: 1.34.0(typescript@5.8.3)
       '@themeglabs/lending-agent-sdk':
-        specifier: ^1.0.10
-        version: 1.0.10(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)
+        specifier: ^1.0.11
+        version: 1.0.11(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)
       dotenv:
         specifier: ^17.2.2
         version: 17.2.2
@@ -1911,8 +1911,8 @@ packages:
   '@tanstack/query-core@5.59.16':
     resolution: {integrity: sha512-crHn+G3ltqb5JG0oUv6q+PMz1m1YkjpASrXTU+sYWW9pLk0t2GybUHNRqYPZWhxgjPaVGC4yp92gSFEJgYEsPw==}
 
-  '@themeglabs/lending-agent-sdk@1.0.10':
-    resolution: {integrity: sha512-ackTkfF8f44kEyZv2XNR3NeXjwpookDmNgdt1ZcKn5ELxpT+CC7ouyvCjESuP5ow9t7sOlOwXJ7/dR7qwnc3oA==}
+  '@themeglabs/lending-agent-sdk@1.0.11':
+    resolution: {integrity: sha512-Isw+s8QVb8JRbrhkZUJOuj1mSsDdUUpz6NwThOwyJmz+p5g0fa+2WS+tYICsmZItZY463ohkDmznSAjZrE5erA==}
     engines: {node: '>=18.0.0'}
 
   '@tsconfig/node10@1.0.11':
@@ -6857,7 +6857,7 @@ snapshots:
 
   '@tanstack/query-core@5.59.16': {}
 
-  '@themeglabs/lending-agent-sdk@1.0.10(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)':
+  '@themeglabs/lending-agent-sdk@1.0.11(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)':
     dependencies:
       '@7kprotocol/sdk-ts': 3.4.1(@mysten/sui@1.34.0(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
       '@alphafi/alphalend-sdk': 1.1.17(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.34.0(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
