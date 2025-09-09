@@ -1,4 +1,4 @@
-import { CurrencyAmount, LendingAgentClient, SmartYieldStepType, SmartYieldStrategy, SuiToken, SupportedLendingMarketProtocol } from "@themeglabs/lending-agent-sdk"
+import { LendingAgentClient, SmartYieldStrategy } from "@themeglabs/lending-agent-sdk"
 
 export async function buildOpenStrategyTransaction(
   lendingAgentClient: LendingAgentClient,

@@ -2,9 +2,7 @@ import { SuiClient, getFullnodeUrl } from "@mysten/sui/client"
 import { Ed25519Keypair } from "@mysten/sui/keypairs/ed25519"
 import { CurrencyAmount, LendingAgentClient, SmartYieldStepType, SmartYieldStrategy, SuiToken } from "@themeglabs/lending-agent-sdk"
 import { config } from "dotenv"
-import { getAllRoutes } from "./lending-agent/get-routes"
-import { buildOpenStrategyTransaction } from "./lending-agent/open-strategy"
-import { buildContinueStrategyTransaction } from "./lending-agent/continue-strategy"
+import { buildContinueStrategyTransaction, buildOpenStrategyTransaction, getAllRoutes } from "./lending-agent"
 
 async function main() {
   config() // load environment variables from .env file
@@ -14,6 +12,7 @@ async function main() {
     Ed25519Keypair.fromSecretKey(process.env.PRIVATE_KEY_1 || ""),
   ]
   const senders = keypairs.map((kp) => kp.getPublicKey().toSuiAddress())
+  // console.log("Senders", senders)
   const suiClient = new SuiClient({ url: getFullnodeUrl("mainnet") })
   const lendingAgentClient = new LendingAgentClient({ chainId: "sui:mainnet" })
 
@@ -32,6 +31,7 @@ async function main() {
     intermediateTokens,
     true, // one-click mode // change to `false`  if you want to test example 3.2 (multi-click mode)
   )
+  // console.log(`Found routes`, routes)
 
   // example 2. Calculate APR for a strategy
   // select a route
@@ -87,8 +87,9 @@ async function main() {
   )
   const response = await suiClient.signAndExecuteTransaction({
     signer: keypairs[0],
-    transaction: tx,
+    transaction: tx as any,
   })
+  console.log("Open strategy tx response", response.digest)
 
   // example 3.2. Open multi-click strategy
   // get strategyId from the strategy creation transaction to continue the strategy
@@ -113,7 +114,7 @@ async function main() {
     )
     await suiClient.signAndExecuteTransaction({
       signer,
-      transaction: nextTx,
+      transaction: nextTx as any,
     })
 
     nextFlow = _newFlow

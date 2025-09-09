@@ -7,8 +7,8 @@
     "start": "ts-node src/index.ts"
   },
   "dependencies": {
-    "@mysten/sui": "^1.34.0",
-    "@themeglabs/lending-agent-sdk": "^1.0.8",
+    "@mysten/sui": "1.34.0",
+    "@themeglabs/lending-agent-sdk": "^1.0.10",
     "dotenv": "^17.2.2"
   },
   "devDependencies": {

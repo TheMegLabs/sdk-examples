@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@mysten/sui':
-        specifier: ^1.34.0
-        version: 1.37.6(typescript@5.8.3)
+        specifier: 1.34.0
+        version: 1.34.0(typescript@5.8.3)
       '@themeglabs/lending-agent-sdk':
-        specifier: ^1.0.8
-        version: 1.0.8(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bn.js@5.2.2)(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)
+        specifier: ^1.0.10
+        version: 1.0.10(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)
       dotenv:
         specifier: ^17.2.2
         version: 17.2.2
@@ -658,8 +658,13 @@ packages:
       '@mysten/sui': ^1.33.0
       '@pythnetwork/pyth-sui-js': ^2.1.0
 
-  '@cetusprotocol/aggregator-sdk@1.1.5':
-    resolution: {integrity: sha512-94IO4r+5VdpptETReyrCKJqATF4vG0T75YpgXH3OaStqvIXlRF2Olu09Y3RljkmncNyox27Znr5XzLhgmDHVMA==}
+  '@cetusprotocol/aggregator-sdk@0.14.2':
+    resolution: {integrity: sha512-defXS6YsxTvKLJ4an23IKk/jAnd0zy5N6HsU6IcAm2orSBSxyWPu6DZ3CHcWnau6Du63Xq4TY1Mf7G7gQAFVTQ==}
+    peerDependencies:
+      typescript: ^5.0.0
+
+  '@cetusprotocol/aggregator-sdk@1.1.6':
+    resolution: {integrity: sha512-imrr0euiONmr7lzo+8uiUNyjxPkjMu4pAhZh9XLxcSyXsW3dhv94Nk1YtZ7Uq+//kXj8MRDGS5Nw4Lv5b2mvGA==}
     peerDependencies:
       typescript: ^5.0.0
 
@@ -1268,10 +1273,6 @@ packages:
     resolution: {integrity: sha512-Btf2Tq5VPXqABOXqtw9hV13DskepggP7MpeGb7OnRNF2grh1nHyWj9J0Y2UmkhZUEdTWpnVRnl/ufIZ6VmU1kg==}
     engines: {node: '>=18'}
 
-  '@mysten/sui@1.37.6':
-    resolution: {integrity: sha512-7ut5tWuXx9OIE+DQ2D5hd22UB8j8K4/F2Lx3R8Ej/JMwkm6cpgbF5FKNu0vYqehxiFEktMnq2YzzajxmlFHNPw==}
-    engines: {node: '>=18'}
-
   '@mysten/utils@0.0.0':
     resolution: {integrity: sha512-KRI57Qow3E7TGqczimazwGf7+fwukdOi+6a31igSCzz0kPjAXbyK1a1gXaxeLMF8xEZ07ouW3RnsWt+EaUuHUw==}
 
@@ -1289,6 +1290,9 @@ packages:
 
   '@naviprotocol/astros-aggregator-sdk@1.4.3':
     resolution: {integrity: sha512-aPRk7TZuU2lEm/ybApCBcQZ36QmoDYdTTUpyc7BicCiugI6xP3b7GIDCmoefH7xPX/g7tB83pVwGoli0gST1iw==}
+
+  '@naviprotocol/lending@1.0.6':
+    resolution: {integrity: sha512-i1LflFtmoDDF2y+4r9S1x0KfNz5u4bJRVROKKSBiHw7yGkYwoIFIv2XrkrTXp8RBk16qeuVm7eojJI+Zjxg0gQ==}
 
   '@next/env@15.5.2':
     resolution: {integrity: sha512-Qe06ew4zt12LeO6N7j8/nULSOe3fMXE4dM6xgpBQNvdzyK1sv5y4oAP3bq4LamrvGCZtmRYnW8URFCeX5nFgGg==}
@@ -1882,15 +1886,15 @@ packages:
   '@suchipi/femver@1.0.0':
     resolution: {integrity: sha512-bprE8+K5V+DPX7q2e2K57ImqNBdfGHDIWaGI5xHxZoxbKOuQZn4wzPiUxOAHnsUr3w3xHrWXwN7gnG/iIuEMIg==}
 
-  '@suilend/sdk@1.1.77':
-    resolution: {integrity: sha512-LTlSm4Bed4KeU4tFEJXHDRFX55PY1jx1NVXMp2/g0bqei/EbP4ItJPnvjSX7dTeHd0zIuTP5RaQFZ4/+w8q4cw==}
+  '@suilend/sdk@1.1.73':
+    resolution: {integrity: sha512-9e5Tpv3zHWJ1gTGFdqNHrNg7c3h/HAuvL48LtAPOvRwbWdW3bzbSzqZgapMjcr4NPYkJEc+do+uokp3jlBZHKQ==}
     peerDependencies:
       '@mysten/bcs': 1.6.0
       '@mysten/sui': 1.28.2
-      '@suilend/sui-fe': ^0.3.29
+      '@suilend/sui-fe': ^0.3.16
 
-  '@suilend/sui-fe@0.3.29':
-    resolution: {integrity: sha512-5ZfwuBfcz+hv0Z3H5BF+dBzhv9i198bC6JtDPKuyKJ+fyaGT59R5XfPrOCQd0V+LRQds0Mkt4Gel5q2+36nV4g==}
+  '@suilend/sui-fe@0.3.21':
+    resolution: {integrity: sha512-BKR/OH4WBD8IelpI4NvNrML4Oj2Vf2t1/8JXV9hUZijol7e9M2sPzUUIGGCeHJjhU27gzPlpwMXLgAg1BNV8iA==}
     peerDependencies:
       '@mysten/sui': 1.28.2
       date-fns: ^4.1.0
@@ -1907,8 +1911,8 @@ packages:
   '@tanstack/query-core@5.59.16':
     resolution: {integrity: sha512-crHn+G3ltqb5JG0oUv6q+PMz1m1YkjpASrXTU+sYWW9pLk0t2GybUHNRqYPZWhxgjPaVGC4yp92gSFEJgYEsPw==}
 
-  '@themeglabs/lending-agent-sdk@1.0.8':
-    resolution: {integrity: sha512-VPY7tbNnZiOoK0SfI9X3IHF8IcwVnphF0zBpO1mGfWeBasUggV2PQce6QzX5IHyC/XeY2whqauFaW8cR4iKe3g==}
+  '@themeglabs/lending-agent-sdk@1.0.10':
+    resolution: {integrity: sha512-ackTkfF8f44kEyZv2XNR3NeXjwpookDmNgdt1ZcKn5ELxpT+CC7ouyvCjESuP5ow9t7sOlOwXJ7/dR7qwnc3oA==}
     engines: {node: '>=18.0.0'}
 
   '@tsconfig/node10@1.0.11':
@@ -1970,6 +1974,9 @@ packages:
 
   '@types/jest@29.5.14':
     resolution: {integrity: sha512-ZN+4sdnLUbo8EVvVc2ao0GFW6oVrQRPn4K2lglySj7APvSrgzxHiNNK99us4WDMi57xxA2yggblIAMNhXOotLQ==}
+
+  '@types/json-bigint@1.0.4':
+    resolution: {integrity: sha512-ydHooXLbOmxBbubnA7Eh+RpBzuaIiQjh8WGJYQB50JFGFrdxW7JzVlyEV7fAXw0T2sqJ1ysTneJbiyNLqZRAag==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -2736,8 +2743,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  electron-to-chromium@1.5.214:
-    resolution: {integrity: sha512-TpvUNdha+X3ybfU78NoQatKvQEm1oq3lf2QbnmCEdw+Bd9RuIAY+hJTvq1avzHM0f7EJfnH3vbCnbzKzisc/9Q==}
+  electron-to-chromium@1.5.215:
+    resolution: {integrity: sha512-TIvGp57UpeNetj/wV/xpFNpWGb0b/ROw372lHPx5Aafx02gjTBtWnEEcaSX3W2dLM3OSdGGyHX/cHl01JQsLaQ==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -3406,6 +3413,9 @@ packages:
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
+
+  lodash.camelcase@4.3.0:
+    resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
 
   lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
@@ -4487,18 +4497,18 @@ snapshots:
       graphql: 16.11.0
       typescript: 5.8.3
 
-  '@7kprotocol/sdk-ts@3.4.1(@mysten/sui@1.37.6(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))':
+  '@7kprotocol/sdk-ts@3.4.1(@mysten/sui@1.34.0(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
 
   '@adraffy/ens-normalize@1.10.1': {}
 
-  '@alphafi/alphalend-sdk@1.1.17(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.37.6(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@alphafi/alphalend-sdk@1.1.17(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.34.0(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
-      '@7kprotocol/sdk-ts': 3.4.1(@mysten/sui@1.37.6(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
-      '@alphafi/stsui-sdk': 0.0.22(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.37.6(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@7kprotocol/sdk-ts': 3.4.1(@mysten/sui@1.34.0(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
+      '@alphafi/stsui-sdk': 0.0.22(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.34.0(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
       bech32: 2.0.0
       decimal.js: 10.6.0
@@ -4523,13 +4533,13 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@alphafi/stsui-sdk@0.0.22(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.37.6(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)':
+  '@alphafi/stsui-sdk@0.0.22(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.34.0(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@types/bn.js': 5.2.0
       decimal.js: 10.6.0
       jest: 29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
-      ts-jest: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)))(typescript@5.8.3)
+      ts-jest: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)))(typescript@5.8.3)
       typedoc: 0.27.9(typescript@5.8.3)
     transitivePeerDependencies:
       - '@babel/core'
@@ -5303,28 +5313,29 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@bluefin-exchange/bluefin7k-aggregator-sdk@4.3.1(@mysten/sui@1.37.6(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))':
+  '@bluefin-exchange/bluefin7k-aggregator-sdk@4.3.1(@mysten/sui@1.34.0(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
 
-  '@cetusprotocol/aggregator-sdk@1.1.5(@jest/transform@29.7.0)(@jest/types@29.6.3)(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@cetusprotocol/aggregator-sdk@0.14.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/preset-env': 7.28.3(@babel/core@7.28.4)
       '@babel/preset-typescript': 7.27.1(@babel/core@7.28.4)
       '@jest/globals': 29.7.0
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@types/jest': 29.5.14
+      '@types/json-bigint': 1.0.4
       '@types/node': 20.19.13
       babel-jest: 29.7.0(@babel/core@7.28.4)
       bip39: 3.1.0
       dotenv: 16.6.1
-      jest: 29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
+      jest: 29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
       json-bigint: 1.0.0
       node-fetch: 3.3.2
-      ts-jest: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)))(typescript@5.8.3)
+      ts-jest: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)))(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
       - '@gql.tada/svelte-support'
@@ -5339,6 +5350,22 @@ snapshots:
       - node-notifier
       - supports-color
       - ts-node
+      - utf-8-validate
+
+  '@cetusprotocol/aggregator-sdk@1.1.6(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)':
+    dependencies:
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
+      '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
+      bip39: 3.1.0
+      dotenv: 16.6.1
+      json-bigint: 1.0.0
+      node-fetch: 3.3.2
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - '@gql.tada/svelte-support'
+      - '@gql.tada/vue-support'
+      - bufferutil
+      - debug
       - utf-8-validate
 
   '@cspotcode/source-map-support@0.8.1':
@@ -5496,13 +5523,13 @@ snapshots:
   '@esbuild/win32-x64@0.24.2':
     optional: true
 
-  '@flowx-finance/sdk@1.13.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@flowx-finance/sdk@1.13.2(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(graphql@16.11.0)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
-      '@bluefin-exchange/bluefin7k-aggregator-sdk': 4.3.1(@mysten/sui@1.37.6(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
-      '@cetusprotocol/aggregator-sdk': 1.1.5(@jest/transform@29.7.0)(@jest/types@29.6.3)(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@bluefin-exchange/bluefin7k-aggregator-sdk': 4.3.1(@mysten/sui@1.34.0(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
+      '@cetusprotocol/aggregator-sdk': 1.1.6(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@mysten/sui.js': 0.54.1(typescript@5.8.3)
-      aftermath-ts-sdk: 1.3.20(@mysten/sui@1.37.6(typescript@5.8.3))
+      aftermath-ts-sdk: 1.3.20(@mysten/sui@1.34.0(typescript@5.8.3))
       bignumber.js: 9.3.1
       bn.js: 5.2.2
       crypto-js: 4.2.0
@@ -5517,19 +5544,11 @@ snapshots:
     transitivePeerDependencies:
       - '@gql.tada/svelte-support'
       - '@gql.tada/vue-support'
-      - '@jest/transform'
-      - '@jest/types'
       - '@pythnetwork/pyth-sui-js'
-      - babel-plugin-macros
       - bufferutil
       - debug
       - encoding
-      - esbuild
       - graphql
-      - jest-util
-      - node-notifier
-      - supports-color
-      - ts-node
       - typescript
       - utf-8-validate
 
@@ -5845,7 +5864,7 @@ snapshots:
 
   '@mayanfinance/swap-sdk@10.3.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@solana/buffer-layout': 4.0.1
       '@solana/web3.js': 1.98.4(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
       bs58: 6.0.0
@@ -5884,9 +5903,9 @@ snapshots:
       base64-arraybuffer: 1.0.2
       mitt: 3.0.1
 
-  '@mmt-finance/clmm-sdk@1.3.18(@mysten/sui@1.37.6(typescript@5.8.3))(axios@1.11.0)(bn.js@5.2.2)(decimal.js@10.6.0)':
+  '@mmt-finance/clmm-sdk@1.3.18(@mysten/sui@1.34.0(typescript@5.8.3))(axios@1.11.0)(bn.js@5.2.2)(decimal.js@10.6.0)':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@syntsugar/cc-graph': 0.1.1
       axios: 1.11.0
       bn.js: 5.2.2
@@ -5990,25 +6009,6 @@ snapshots:
       - '@gql.tada/vue-support'
       - typescript
 
-  '@mysten/sui@1.37.6(typescript@5.8.3)':
-    dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.11.0)
-      '@mysten/bcs': 1.7.0
-      '@mysten/utils': 0.1.1
-      '@noble/curves': 1.9.7
-      '@noble/hashes': 1.8.0
-      '@scure/base': 1.2.6
-      '@scure/bip32': 1.7.0
-      '@scure/bip39': 1.6.0
-      gql.tada: 1.8.13(graphql@16.11.0)(typescript@5.8.3)
-      graphql: 16.11.0
-      poseidon-lite: 0.2.1
-      valibot: 0.36.0
-    transitivePeerDependencies:
-      - '@gql.tada/svelte-support'
-      - '@gql.tada/vue-support'
-      - typescript
-
   '@mysten/utils@0.0.0':
     dependencies:
       '@scure/base': 1.2.6
@@ -6052,6 +6052,21 @@ snapshots:
       - '@gql.tada/vue-support'
       - debug
       - typescript
+
+  '@naviprotocol/lending@1.0.6(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)':
+    dependencies:
+      '@mysten/bcs': 1.7.0
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
+      '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
+      bignumber.js: 9.1.2
+      lodash.camelcase: 4.3.0
+    transitivePeerDependencies:
+      - '@gql.tada/svelte-support'
+      - '@gql.tada/vue-support'
+      - bufferutil
+      - debug
+      - typescript
+      - utf-8-validate
 
   '@next/env@15.5.2': {}
 
@@ -6360,7 +6375,7 @@ snapshots:
 
   '@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@pythnetwork/price-service-client': 1.9.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       buffer: 6.0.3
     transitivePeerDependencies:
@@ -6457,7 +6472,7 @@ snapshots:
   '@scallop-io/sui-kit@1.4.1(typescript@5.8.3)':
     dependencies:
       '@mysten/bcs': 1.7.0
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@scure/bip39': 1.6.0
       assert: 2.1.0
       bech32: 2.0.0
@@ -6466,9 +6481,9 @@ snapshots:
       - '@gql.tada/vue-support'
       - typescript
 
-  '@scallop-io/sui-scallop-sdk@2.2.6(@mysten/sui@1.37.6(typescript@5.8.3))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(bn.js@5.2.2)(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@scallop-io/sui-scallop-sdk@2.2.6(@mysten/sui@1.34.0(typescript@5.8.3))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(bn.js@5.2.2)(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@scallop-io/sui-kit': 1.4.1(typescript@5.8.3)
       '@tanstack/query-core': 5.59.16
@@ -6770,16 +6785,16 @@ snapshots:
 
   '@suchipi/femver@1.0.0': {}
 
-  '@suilend/sdk@1.1.77(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/bcs@1.7.0)(@mysten/sui@1.37.6(typescript@5.8.3))(@suilend/sui-fe@0.3.29(@babel/core@7.28.4)(@mysten/sui@1.37.6(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@suilend/sdk@1.1.73(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/bcs@1.7.0)(@mysten/sui@1.34.0(typescript@5.8.3))(@suilend/sui-fe@0.3.21(@babel/core@7.28.4)(@mysten/sui@1.34.0(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
-      '@7kprotocol/sdk-ts': 3.4.1(@mysten/sui@1.37.6(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
-      '@cetusprotocol/aggregator-sdk': 1.1.5(@jest/transform@29.7.0)(@jest/types@29.6.3)(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@flowx-finance/sdk': 1.13.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
+      '@7kprotocol/sdk-ts': 3.4.1(@mysten/sui@1.34.0(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
+      '@cetusprotocol/aggregator-sdk': 0.14.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
+      '@flowx-finance/sdk': 1.13.2(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(graphql@16.11.0)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@mysten/bcs': 1.7.0
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@suilend/sui-fe': 0.3.29(@babel/core@7.28.4)(@mysten/sui@1.37.6(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
-      aftermath-ts-sdk: 1.3.20(@mysten/sui@1.37.6(typescript@5.8.3))
+      '@suilend/sui-fe': 0.3.21(@babel/core@7.28.4)(@mysten/sui@1.34.0(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
+      aftermath-ts-sdk: 1.3.20(@mysten/sui@1.34.0(typescript@5.8.3))
       bignumber.js: 9.3.1
       bn.js: 5.2.2
       crypto-js: 4.2.0
@@ -6803,9 +6818,9 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@suilend/sui-fe@0.3.29(@babel/core@7.28.4)(@mysten/sui@1.37.6(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)':
+  '@suilend/sui-fe@0.3.21(@babel/core@7.28.4)(@mysten/sui@1.34.0(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)':
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@mysten/wallet-standard': 0.14.7(typescript@5.8.3)
       bignumber.js: 9.3.1
       blake2b: 2.1.4
@@ -6842,25 +6857,27 @@ snapshots:
 
   '@tanstack/query-core@5.59.16': {}
 
-  '@themeglabs/lending-agent-sdk@1.0.8(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bn.js@5.2.2)(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)':
+  '@themeglabs/lending-agent-sdk@1.0.10(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)(webpack@5.101.3)':
     dependencies:
-      '@7kprotocol/sdk-ts': 3.4.1(@mysten/sui@1.37.6(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
-      '@alphafi/alphalend-sdk': 1.1.17(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.37.6(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@flowx-finance/sdk': 1.13.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@mmt-finance/clmm-sdk': 1.3.18(@mysten/sui@1.37.6(typescript@5.8.3))(axios@1.11.0)(bn.js@5.2.2)(decimal.js@10.6.0)
+      '@7kprotocol/sdk-ts': 3.4.1(@mysten/sui@1.34.0(typescript@5.8.3))(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))
+      '@alphafi/alphalend-sdk': 1.1.17(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/sui@1.34.0(typescript@5.8.3))(@types/node@24.3.1)(babel-jest@29.7.0(@babel/core@7.28.4))(bufferutil@4.0.9)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
+      '@flowx-finance/sdk': 1.13.2(@pythnetwork/pyth-sui-js@2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(graphql@16.11.0)(typescript@5.8.3)(utf-8-validate@5.0.10)
+      '@mmt-finance/clmm-sdk': 1.3.18(@mysten/sui@1.34.0(typescript@5.8.3))(axios@1.11.0)(bn.js@5.2.2)(decimal.js@10.6.0)
       '@mysten/bcs': 1.7.0
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@mysten/wallet-standard': 0.13.29(typescript@5.8.3)
       '@naviprotocol/astros-aggregator-sdk': 1.4.3(typescript@5.8.3)
+      '@naviprotocol/lending': 1.0.6(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@scallop-io/sui-scallop-sdk': 2.2.6(@mysten/sui@1.37.6(typescript@5.8.3))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(bn.js@5.2.2)(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
+      '@scallop-io/sui-scallop-sdk': 2.2.6(@mysten/sui@1.34.0(typescript@5.8.3))(@scallop-io/sui-kit@1.4.1(typescript@5.8.3))(bn.js@5.2.2)(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@sentry/nextjs': 9.46.0(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(next@15.5.2(@babel/core@7.28.4)(@opentelemetry/api@1.9.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)(webpack@5.101.3)
-      '@suilend/sdk': 1.1.77(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/bcs@1.7.0)(@mysten/sui@1.37.6(typescript@5.8.3))(@suilend/sui-fe@0.3.29(@babel/core@7.28.4)(@mysten/sui@1.37.6(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@suilend/sui-fe': 0.3.29(@babel/core@7.28.4)(@mysten/sui@1.37.6(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
+      '@suilend/sdk': 1.1.73(@jest/transform@29.7.0)(@jest/types@29.6.3)(@mysten/bcs@1.7.0)(@mysten/sui@1.34.0(typescript@5.8.3))(@suilend/sui-fe@0.3.21(@babel/core@7.28.4)(@mysten/sui@1.34.0(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(bufferutil@4.0.9)(graphql@16.11.0)(jest-util@29.7.0)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
+      '@suilend/sui-fe': 0.3.21(@babel/core@7.28.4)(@mysten/sui@1.34.0(typescript@5.8.3))(@opentelemetry/api@1.9.0)(date-fns@4.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
       '@wallet-standard/core': 1.1.1
       '@wallet-standard/experimental-features': 0.2.0
       axios: 1.11.0
       big.js: 6.2.2
+      bn.js: 5.2.2
       clipboard: 2.0.11
       date-fns: 4.1.0
       decimal.js: 10.6.0
@@ -6890,7 +6907,6 @@ snapshots:
       - babel-jest
       - babel-plugin-macros
       - babel-plugin-react-compiler
-      - bn.js
       - bufferutil
       - debug
       - encoding
@@ -6989,6 +7005,8 @@ snapshots:
     dependencies:
       expect: 29.7.0
       pretty-format: 29.7.0
+
+  '@types/json-bigint@1.0.4': {}
 
   '@types/json-schema@7.0.15': {}
 
@@ -7212,9 +7230,9 @@ snapshots:
 
   aes-js@4.0.0-beta.5: {}
 
-  aftermath-ts-sdk@1.3.20(@mysten/sui@1.37.6(typescript@5.8.3)):
+  aftermath-ts-sdk@1.3.20(@mysten/sui@1.34.0(typescript@5.8.3)):
     dependencies:
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       bn.js: 5.2.2
       dayjs: 1.11.18
       node-fetch: 3.3.2
@@ -7443,7 +7461,7 @@ snapshots:
   browserslist@4.25.4:
     dependencies:
       caniuse-lite: 1.0.30001741
-      electron-to-chromium: 1.5.214
+      electron-to-chromium: 1.5.215
       node-releases: 2.0.20
       update-browserslist-db: 1.1.3(browserslist@4.25.4)
 
@@ -7615,21 +7633,6 @@ snapshots:
       browserslist: 4.25.4
 
   create-jest@29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)):
-    dependencies:
-      '@jest/types': 29.6.3
-      chalk: 4.1.2
-      exit: 0.1.2
-      graceful-fs: 4.2.11
-      jest-config: 29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
-      jest-util: 29.7.0
-      prompts: 2.4.2
-    transitivePeerDependencies:
-      - '@types/node'
-      - babel-plugin-macros
-      - supports-color
-      - ts-node
-
-  create-jest@29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)):
     dependencies:
       '@jest/types': 29.6.3
       chalk: 4.1.2
@@ -7877,7 +7880,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  electron-to-chromium@1.5.214: {}
+  electron-to-chromium@1.5.215: {}
 
   emittery@0.13.1: {}
 
@@ -8461,25 +8464,6 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest-cli@29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)):
-    dependencies:
-      '@jest/core': 29.7.0(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
-      '@jest/test-result': 29.7.0
-      '@jest/types': 29.6.3
-      chalk: 4.1.2
-      create-jest: 29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
-      exit: 0.1.2
-      import-local: 3.2.0
-      jest-config: 29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
-      jest-util: 29.7.0
-      jest-validate: 29.7.0
-      yargs: 17.7.2
-    transitivePeerDependencies:
-      - '@types/node'
-      - babel-plugin-macros
-      - supports-color
-      - ts-node
-
   jest-config@29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)):
     dependencies:
       '@babel/core': 7.28.4
@@ -8763,24 +8747,12 @@ snapshots:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  jest@29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)):
-    dependencies:
-      '@jest/core': 29.7.0(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
-      '@jest/types': 29.6.3
-      import-local: 3.2.0
-      jest-cli: 29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
-    transitivePeerDependencies:
-      - '@types/node'
-      - babel-plugin-macros
-      - supports-color
-      - ts-node
-
   jest@29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)):
     dependencies:
       '@jest/core': 29.7.0(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
       '@jest/types': 29.6.3
       import-local: 3.2.0
-      jest-cli: 29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
+      jest-cli: 29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3))
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -8842,6 +8814,8 @@ snapshots:
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
+
+  lodash.camelcase@4.3.0: {}
 
   lodash.debounce@4.0.8: {}
 
@@ -8953,7 +8927,7 @@ snapshots:
   navi-sdk@1.6.22(@types/node@24.3.1)(bufferutil@4.0.9)(terser@5.44.0)(typescript@5.8.3)(utf-8-validate@5.0.10):
     dependencies:
       '@mayanfinance/swap-sdk': 10.3.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@mysten/sui': 1.37.6(typescript@5.8.3)
+      '@mysten/sui': 1.34.0(typescript@5.8.3)
       '@mysten/sui.js': 0.54.1(typescript@5.8.3)
       '@pythnetwork/pyth-sui-js': 2.2.0(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@solana/web3.js': 1.98.4(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
@@ -9563,7 +9537,7 @@ snapshots:
 
   tr46@0.0.3: {}
 
-  ts-jest@29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@24.3.1)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)))(typescript@5.8.3):
+  ts-jest@29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@29.7.0)(jest@29.7.0(@types/node@20.19.13)(ts-node@10.9.2(@types/node@24.3.1)(typescript@5.8.3)))(typescript@5.8.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
